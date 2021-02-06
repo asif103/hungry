@@ -1,12 +1,12 @@
 
 
 const searchBtn = () => {
-    const foodCategory = document.getElementById('foodCategory').value;
-    searchByCategory(foodCategory);
+    const foodName = document.getElementById('foodName').value;
+    searchByCategory(foodName);
 }
 
-const searchByCategory = categoryName => {
-    const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${categoryName}`;
+const searchByCategory = foodName => {
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foodName}`;
     fetch(url)
         .then(response => response.json())
     .then(data => displayFood(data.meals))
