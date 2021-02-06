@@ -80,33 +80,3 @@ const showFood = food => {
             foodDiv.innerHTML = foodInfo;
             showFood.appendChild(foodDiv);
 }
-
-// fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
-//     .then(response => response.json())
-//     .then(data => displayCountries(data))
-
-// const displayCountries = countries => {
-//     const allCountries = document.getElementById('allCountries')
-//             countries.forEach(country => {
-//             let countryDiv = document.createElement('div');
-//             countryDiv.classList.add('col-md-4','shadow','p-2');
-
-        
-//         let countryInfo = `
-//             <h3 class="countryName">${country.name}</h3>
-//             <p class="countryCapital">${country.capital}</p>
-//             <img src="${country.flag}" alt="" class="img-fluid w-50">
-//             <a href="#" onclick="displayCountryDetail('${country.name}')" class="btn btn-info">Show Detail</a>
-//         `;
-
-//             countryDiv.innerHTML = countryInfo;
-//             allCountries.appendChild(countryDiv);
-//         });
-// }
-    
-// const displayCountryDetail = countryName => {
-//     const url = `https://restcountries.eu/rest/v2/name/${countryName}`;
-//     fetch(url)
-//         .then(response => response.json())
-//         .then(data => console.log( data[0].name))
-// }
